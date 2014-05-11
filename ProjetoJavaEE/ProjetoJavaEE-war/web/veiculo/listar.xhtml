@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <link rel="stylesheet" href="../theme/css/theme.css" type="text/css"/>
+        <title>Listar Veículos</title>
+    </h:head>
+    <h:body>
+        <div id="container">
+            <div id="listBox">
+                <table>
+                    <th>
+                        <td>Marca</td>
+                        <td>Modelo</td>
+                        <td>Preco</td>
+                        <td>Cor</td>
+                        <td>Fabricante</td>
+                    </th>
+                    <c:forEach items="${veiculoBean.listaVeiculo}" var="veiculo">
+                        <tr>
+                            <td>
+                                ${veiculo.marca}
+                            </td>
+                            <td>
+                                ${veiculo.modelo}
+                            </td>
+                            <td>
+                                ${veiculo.preco}
+                            </td>
+                            <td>
+                                ${veiculo.cor}
+                            </td>
+                            <td>
+                                ${veiculo.fabricante}
+                            </td>
+                        </tr>
+                    </c:forEach>
+                </table>
+            </div>
+        </div>
+    </h:body>
+</html>
