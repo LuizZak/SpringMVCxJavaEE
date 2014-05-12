@@ -42,6 +42,11 @@ public class VeiculoBean implements Serializable
         return "telaListarVeiculos";
     }
     
+    public String telaPrincipal()
+    {
+        return "telaVeiculoPrincipal";
+    }
+    
     public String cadastrar()
     {
         veiculoEJB.cadastrarVeiculo(veiculo);
@@ -62,8 +67,6 @@ public class VeiculoBean implements Serializable
      */
     public void setVeiculo(Veiculo veiculo)
     {
-        System.out.print("SETTING: ");
-        System.out.println(veiculo);
         this.veiculo = veiculo;
     }
 

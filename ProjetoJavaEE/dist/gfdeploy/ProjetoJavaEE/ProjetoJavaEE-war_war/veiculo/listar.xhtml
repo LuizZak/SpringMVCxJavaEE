@@ -4,20 +4,20 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
     <h:head>
-        <link rel="stylesheet" href="../theme/css/theme.css" type="text/css"/>
+        <link rel="stylesheet" href="#{request.contextPath}/theme/css/theme.css" type="text/css"/>
         <title>Listar Veículos</title>
     </h:head>
     <h:body>
         <div id="container">
             <div id="listBox">
                 <table>
-                    <th>
-                        <td>Marca</td>
-                        <td>Modelo</td>
-                        <td>Preco</td>
-                        <td>Cor</td>
-                        <td>Fabricante</td>
-                    </th>
+                    <tr>
+                        <th>Marca</th>
+                        <th>Modelo</th>
+                        <th>Preco</th>
+                        <th>Cor</th>
+                        <th>Fabricante</th>
+                    </tr>
                     <c:forEach items="${veiculoBean.listaVeiculo}" var="veiculo">
                         <tr>
                             <td>
@@ -38,6 +38,9 @@
                         </tr>
                     </c:forEach>
                 </table>
+                <h:form>
+                    <h:commandLink value="Voltar" action="#{veiculoBean.telaPrincipal()}"/>
+                </h:form>
             </div>
         </div>
     </h:body>
