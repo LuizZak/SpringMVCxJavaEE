@@ -44,6 +44,7 @@
                         </tr>
                     </c:forEach>
                 </table>
+                <a href="principal.htm">Voltar</a>
             </div>
         </div>
     </body>

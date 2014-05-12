@@ -35,7 +35,19 @@
                         </tr>
                         <tr>
                             <td><form:label path="cor">Cor</form:label></td>
-                            <td><form:input path="cor"/></td>
+                            <!--<td><form:input path="cor"/></td>--<f:selectItem itemLabel="Escolha uma opção" itemValue="" />
+                            <f:selectItem itemLabel="Preto" itemValue="preto" />
+                            <f:selectItem itemLabel="Prata" itemValue="prata" />
+                            <f:selectItem itemLabel="Vermelho" itemValue="vermelho" />
+                            <f:selectItem itemLabel="Marrom" itemValue="marrom" />-->
+                            <td>
+                                <form:select path="cor">
+                                    <form:option value="preto" label="Preto"/>
+                                    <form:option value="prata" label="Prata"/>
+                                    <form:option value="vermelho" label="Vermelho"/>
+                                    <form:option value="marro" label="Marrom"/>
+                                </form:select>
+                            </td>
                         </tr>
                         <tr>
                             <td><form:label path="marca">Marca</form:label></td>
@@ -52,6 +64,7 @@
                         </tr>
                     </table>
                 </form:form>
+                <a href="principal.htm">Voltar</a>
             </div>
         </div>
     </body>
