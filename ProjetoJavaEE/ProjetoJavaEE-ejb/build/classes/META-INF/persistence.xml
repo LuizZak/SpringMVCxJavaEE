@@ -3,6 +3,7 @@
   <persistence-unit name="ProjetoJavaEE-ejbPU" transaction-type="JTA">
     <jta-data-source>jdbc/veiculodb</jta-data-source>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
-    <properties/>
+    <properties>
+    </properties>
   </persistence-unit>
 </persistence>
