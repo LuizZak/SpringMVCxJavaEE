@@ -14,28 +14,31 @@
                 <h3>Insira os dados do veículo:</h3>
                 <h:form>
                     <h:panelGrid columns="2">
+                        <p:outputLabel for="codigoVeiculo" value="Id"/>
+                        <p:inputText id="codigoVeiculo" value="#{veiculoBean.veiculo.id}" required="true"/>
+                        
                         <p:outputLabel for="modelo" value="Modelo"/>
-                        <p:inputText id="modelo" value="#{veiculoBean.veiculo.modelo}"/>
-
+                        <p:inputText id="modelo" value="#{veiculoBean.veiculo.modelo}" required="true"/>
+                        
                         <p:outputLabel for="preco" value="Preco"/>
-                        <p:inputText id="preco" value="#{veiculoBean.veiculo.preco}"/>
-
+                        <p:inputText id="preco" value="#{veiculoBean.veiculo.preco}" required="true"/>
+                        
                         <p:outputLabel for="cor" value="Cor" />
-                        <p:selectOneMenu id="cor" value="#{veiculoBean.veiculo.cor}">  
+                        <p:selectOneMenu id="cor" value="#{veiculoBean.veiculo.cor}" required="true">  
                             <f:selectItem itemLabel="Escolha uma opção" itemValue="" />
-                            <f:selectItem itemLabel="Azul" itemValue="azul" />
+                            <f:selectItem itemLabel="Preto" itemValue="preto" />
+                            <f:selectItem itemLabel="Prata" itemValue="prata" />
                             <f:selectItem itemLabel="Vermelho" itemValue="vermelho" />
-                            <f:selectItem itemLabel="Verde" itemValue="verde" />
-                            <f:selectItem itemLabel="Amarelo" itemValue="amarelo" />
+                            <f:selectItem itemLabel="Marrom" itemValue="marrom" />
                         </p:selectOneMenu>
-
+                        
                         <p:outputLabel for="marca" value="Marca"/>
-                        <p:inputText id="marca" value="#{veiculoBean.veiculo.marca}"/>
-
+                        <p:inputText id="marca" value="#{veiculoBean.veiculo.marca}" required="true"/>
+                        
                         <p:outputLabel for="fabricante" value="Fabricante"/>
-                        <p:inputText id="fabricante" value="#{veiculoBean.veiculo.fabricante}"/>
-
-                        <p:commandButton value="Cadastrar" action="#{veiculoBean.cadastrar()}" ajax="false" />
+                        <p:inputText id="fabricante" value="#{veiculoBean.veiculo.fabricante}" required="true"/>
+                        
+                        <p:commandButton value="Cadastrar" action="#{veiculoBean.cadastrar()}" ajax="false"/>
                     </h:panelGrid>
                 </h:form>
             </div>

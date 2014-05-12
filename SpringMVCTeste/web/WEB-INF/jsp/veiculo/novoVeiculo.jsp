@@ -22,6 +22,10 @@
                 <form:form modelAttribute="veiculo" commandName="novoVeiculo" method="post" action="./adicionar.htm">
                     <table>
                         <tr>
+                            <td><form:label path="id">Id</form:label></td>
+                            <td><form:input path="id"/></td>
+                        </tr>
+                        <tr>
                             <td><form:label path="modelo">Modelo</form:label></td>
                             <td><form:input path="modelo"/></td>
                         </tr>

@@ -39,7 +39,7 @@ public class VeiculoBean implements Serializable
     {
         setListaVeiculo(veiculoEJB.listarVeiculos());
         
-        return "./veiculo/listar.xhtml";
+        return "telaListarVeiculos";
     }
     
     public String cadastrar()
@@ -62,6 +62,8 @@ public class VeiculoBean implements Serializable
      */
     public void setVeiculo(Veiculo veiculo)
     {
+        System.out.print("SETTING: ");
+        System.out.println(veiculo);
         this.veiculo = veiculo;
     }
 

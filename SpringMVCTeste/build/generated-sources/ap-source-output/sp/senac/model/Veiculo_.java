@@ -1,10 +1,10 @@
-package sp.senac.entidades;
+package sp.senac.model;
 
 import javax.annotation.Generated;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="EclipseLink-2.5.1.v20130918-rNA", date="2014-05-12T14:48:16")
+@Generated(value="EclipseLink-2.5.1.v20130918-rNA", date="2014-05-12T15:06:54")
 @StaticMetamodel(Veiculo.class)
 public class Veiculo_ { 
 
